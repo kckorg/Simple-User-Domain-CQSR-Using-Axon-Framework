@@ -5,10 +5,11 @@ UserCreatedEvent   --->   UserActivatedEvent  --->  UserDeactivatedEvent
 
 
 #Architechture Design
---------------------------              ---------------------                 ---------------------------
-CommandUserService                                                             QueryUserService 
+
+===========================             ======================                =============================
+CommandUserService            publish                              subscribe         QueryUserService 
 (mongodb as event storage)   ------->        kafka                ------->      (redis as query storage)
 
---------------------------              ----------------------                ---------------------------
+===========================              ======================                =============================
 
 
