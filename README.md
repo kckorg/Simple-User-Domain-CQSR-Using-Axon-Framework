@@ -8,7 +8,7 @@ UserCreatedEvent   --->   UserActivatedEvent  --->  UserDeactivatedEvent
 
 ===========================             ======================                =============================
 CommandUserService            publish                              subscribe         QueryUserService 
-(mongodb as event storage)   ------->        kafka                ------->      (redis as query storage)
+                              ------->        kafka                ------->     
 
 ===========================              ======================                =============================
 
