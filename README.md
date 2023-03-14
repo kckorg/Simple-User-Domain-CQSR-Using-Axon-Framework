@@ -4,12 +4,3 @@ this simple project describe User Domain that have 3 changes event (UserCreatedE
 UserCreatedEvent   --->   UserActivatedEvent  --->  UserDeactivatedEvent
 
 
-#Architechture Design
-
-===========================             ======================                =============================
-CommandUserService            publish                              subscribe         QueryUserService 
-                              ------->        kafka                ------->     
-
-===========================              ======================                =============================
-
-
